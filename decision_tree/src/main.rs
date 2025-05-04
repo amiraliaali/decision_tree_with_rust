@@ -29,8 +29,11 @@ fn main() {
             println!("***********************");
 
             let test_instance = vec![
-                FeatureValue::Categorical("Red".to_string()),
-                FeatureValue::Numeric(10),
+                FeatureValue::Categorical("Overcast".to_string()),
+                FeatureValue::Categorical("Strong".to_string()),
+                FeatureValue::Categorical("Mountain".to_string()),
+                FeatureValue::Numeric(70),
+                FeatureValue::Numeric(65),
             ];
 
             let predicted_label = predict(&tree, &test_instance);
